@@ -29,10 +29,12 @@ type (
 	// StatusRes 发嘟完的响应体
 	StatusRes struct {
 		ID string `json:"id"`
+		Account   Account `json:"account"`
 	}
 	// Account 账号
 	Account struct {
 		UserName string `json:"username"`
+		URL      string `json:"url"`
 	}
 	// Tag 标签
 	Tag struct {
